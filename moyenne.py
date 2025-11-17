@@ -3,8 +3,4 @@ def moyenne(valeurs):
         return 0
     somme = sum(valeurs)
     moyenne = somme / len(valeurs)
-    return moyenne
-
-
-
-
+    return moyenne 
