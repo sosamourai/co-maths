@@ -1,0 +1,18 @@
+def moyenne(valeurs):
+    if len(valeurs) == 0:
+        return 0
+    somme = sum(valeurs)
+    moyenne = somme / len(valeurs)
+    return moyenne
+
+def etendue(valeurs):
+    """Retourne l'étendue (max - min) des valeurs, None si la liste est vide."""
+    if len(valeurs) == 0:
+        return None
+    min_val = max_val = valeurs[0]
+    for v in valeurs[1:]:
+        if v < min_val:
+            min_val = v
+        elif v > max_val:
+            max_val = v
+    return max_val - min_val
