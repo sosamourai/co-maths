@@ -1,0 +1,30 @@
+# ...existing code...
+def minimum(valeurs):
+    if len(valeurs) == 0:
+        return None
+    min_val = valeurs[0]
+    for v in valeurs[1:]:
+        if v < min_val:
+            min_val = v
+    return min_val
+
+def maximum(valeurs):
+    if len(valeurs) == 0:
+        return None
+    max_val = valeurs[0]
+    for v in valeurs[1:]:
+        if v > max_val:
+            max_val = v
+    return max_val
+
+def min_max(valeurs):
+    if len(valeurs) == 0:
+        return None, None
+    min_val = max_val = valeurs[0]
+    for v in valeurs[1:]:
+        if v < min_val:
+            min_val = v
+        elif v > max_val:
+            max_val = v
+    return min_val, max_val
+# ...existing code...
